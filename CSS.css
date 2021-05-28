@@ -1,0 +1,552 @@
+* {
+    box-sizing: border-box;
+  }
+
+
+body {
+    font-family: Verdana, Tahoma, sans-serif;
+    background-color: rgb(215, 246, 250);
+    margin: 0px !important;
+    
+    
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    margin: 0px;
+    overflow: hidden;
+    background-color: azure;
+    
+    
+}
+
+#titulo {
+    float: left;
+    width: 50%;
+    height: 100px;
+    
+}
+
+h1 {
+    font-size: 40px;
+    font-family: monospace, Arial, Helvetica, sans-serif; 
+    text-transform: uppercase;
+    margin-top: 30px;
+    text-align: center;
+  
+   
+}
+
+#botonera_principal{
+    width: 50%;
+    height: 100px;
+    float: right;    
+    
+    
+}
+
+#botonera_principal ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    float: right;  
+
+}
+
+
+#botonera_principal ul li{
+    display: inline; 
+    
+}
+
+#botonera_principal ul li a{
+    display: inline-block; /*agregado*/
+    padding: 10px;
+    background-color: rgb(228, 250, 215);
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    }
+    /*Algunos efectitos para los botones*/
+    #botonera_principal ul li a:hover {
+        color: white; 
+        background-color: rgb(0, 225, 255);
+    }   
+  
+
+#contenido_principal{
+    width: 100%;
+    height: 500px;	 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    }
+
+#imagen1{
+    width: 45%;
+    height: 400px;
+    background-color: #919463;
+    float: left;
+    margin-left: 40px;
+    margin-right: 0px;
+    margin-top: 10px;
+    background-image: url(img/playa.jpg);
+    background-size: cover;
+    }
+
+#presentacion {
+    width: 45%;
+    height: 400px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 40px;
+    background-color: darkgray;
+
+}
+
+h2 {
+    margin-top: 0px;
+    text-transform: uppercase;
+    font-family: monospace, Verdana, Tahoma, sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    text-align: justify;
+    font-family: monospace, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+  }
+
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(169, 190, 202);
+    font-family: monospace, Verdana, Tahoma, sans-serif;
+   
+}
+
+#datos {
+    float: left;
+    width: 50%;
+    height: 100px;
+    margin-left: 40px;
+}
+
+#redes {
+    float: right;
+    width: 50%;
+    height: 100px;
+    
+}
+
+.itinerarios {
+    margin-top: 20px;
+    width: 100%;
+    height: 500px;	 
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+#articulo {
+    margin-left: 20px;
+    margin-right: 10px;
+    font-family: monospace, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+
+
+/*A partir de acá empezamos con el responsive*/
+@media all and (min-width: 1024px) and (max-width: 1300px) {
+    header {
+        width: 100%;
+        height: 300px;
+  
+        
+    }
+    
+    #titulo {
+        float: none;
+        width: 100%;
+        height: 100px;
+        
+    }
+    
+    h1 {
+
+        margin-top: 50px;
+     
+       
+    }
+    
+    #botonera_principal{
+        width: 100%;
+        height: 200px;
+        float: none;    
+    
+        
+    }
+    
+
+    
+    #botonera_principal ul{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        float: none;  
+    
+    }
+    
+
+
+    #botonera_principal ul li a{
+        display: block; /*agregado*/
+        padding: 10px;
+        background-color: rgb(228, 250, 215);
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+        text-align: center;
+        }
+
+      
+    
+    #contenido_principal{
+        width: 100%;
+        height: 780px;	 
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        background-color: springgreen;
+        }
+    
+    #imagen1{
+        width: 100%;
+        height: 400px;
+        background-position: center;
+        float: none;
+        background-size: cover;
+        margin-left: 0px;
+        margin-top: 0px;
+        }
+    
+    #presentacion {
+        width: 100%;
+        height: 380px;
+        float: none;
+        margin-top: 0px;
+        margin-right: 0px;
+        background-color: darkgray;
+    
+    }
+    
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+      }
+    
+    
+    footer {
+        width: 100%;
+        height: 100px;
+        background-color: rgb(169, 190, 202);
+        
+    }
+    
+    #datos {
+        float: none;
+        width: 100%;
+        height: 50px;
+        margin-left: 0px;
+    }
+    
+    #redes {
+        float: none;
+        width: 100%;
+        height: 50px;
+        
+    }
+    #articulo {
+        margin-left: 20px;
+        margin-right: 10px;
+        font-size: 14px;
+    }
+}
+
+/**fin de media 1024 a 1300px*/
+
+
+
+
+
+
+
+/**comienzo media 600 a 1023px*/
+
+@media all and (min-width: 600px) and (max-width:1023px) {
+    
+    header {
+        width: 100%;
+        height: 300px;
+  
+        
+    }
+    
+    #titulo {
+        float: none;
+        width: 100%;
+        height: 100px;
+        
+    }
+    
+    h1 {
+
+        margin-top: 50px;
+     
+       
+    }
+    
+    #botonera_principal{
+        width: 100%;
+        height: 200px;
+        float: none;    
+    
+        
+    }
+    
+
+    
+    #botonera_principal ul{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        float: none;  
+    
+    }
+    
+
+
+    #botonera_principal ul li a{
+        display: block; /*agregado*/
+        padding: 10px;
+        background-color: rgb(228, 250, 215);
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+        text-align: center;
+        }
+
+      
+    
+    #contenido_principal{
+        width: 100%;
+        height: 780px;	 
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        background-color: springgreen;
+        }
+    
+    #imagen1{
+        width: 100%;
+        height: 400px;
+        background-position: center;
+        float: none;
+        background-size: cover;
+        margin-left: 0px;
+        margin-top: 0px;
+        }
+    
+    #presentacion {
+        width: 100%;
+        height: 380px;
+        float: none;
+        margin-top: 0px;
+        margin-right: 0px;
+        background-color: darkgray;
+    
+    }
+    
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+      }
+    
+    
+    footer {
+        width: 100%;
+        height: 100px;
+        background-color: rgb(169, 190, 202);
+        
+    }
+    
+    #datos {
+        float: none;
+        width: 100%;
+        height: 50px;
+        margin-left: 0px;
+    }
+    
+    #redes {
+        float: none;
+        width: 100%;
+        height: 50px;
+        
+    }
+    #articulo {
+        margin-left: 20px;
+        margin-right: 10px;
+        font-size: 14px;
+    }
+
+}
+
+/**fin de media 600 a 1023px*/
+
+/**comienzo media width<=599px*/
+
+@media all and (max-width:599px) {
+
+    header {
+        width: 100%;
+        height: 300px;
+    }
+
+    #titulo {
+        float: none;
+        width: 100%;
+        height: 100px;
+        
+    }
+
+    h1 {
+
+        margin-top: 50px;
+        text-align: center;
+     
+       
+    }
+    #botonera_principal{
+        width: 100%;
+        height: 200px;
+        float: none;    
+    
+        
+    }
+    
+
+    
+    #botonera_principal ul{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        float: none;  
+    
+    }
+    
+
+
+    #botonera_principal ul li a{
+        display: block; /*agregado*/
+        padding: 10px;
+        background-color: rgb(228, 250, 215);
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+        text-align: center;
+        }
+    
+    #contenido_principal{
+        width: 100%;
+        height: 890px;	 
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        background-color: springgreen;
+        }
+        
+    #imagen1{
+        width: 100%;
+        height: 400px;
+        background-position: center;
+        float: none;
+        background-size: cover;
+        margin-left: 0px;
+        margin-top: 0px;
+            }
+        
+    #presentacion {
+        width: 100%;
+        height: 490px;
+        float: none;
+        margin-top: 0px;
+        margin-right: 0px;
+        background-color: darkgray;
+        
+        }
+    
+    p {
+        font-size: 16px;
+        text-align: justify;
+        }
+    .container {
+        
+        display: flex;
+        flex-direction: column;
+        height: 130px;
+        }
+    
+    footer {
+        width: 100%;
+        height: 130px;
+        background-color: rgb(169, 190, 202);
+        margin-top: 0px;
+        margin-bottom: 0px;   
+        font-size: 10px;
+        }
+        
+     #datos {
+        float: none;
+        width: 100%;
+        height: 80px;
+        margin-left: 0px;
+        }
+        
+    #redes {
+        float: none;
+        width: 100%;
+        height: 50px;
+            
+        }
+
+
+    
+
+
+
+
+
+
+
+
+} /**fin de media width<=599px*/
+
+
+
+
+
+
+
